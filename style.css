@@ -1,0 +1,158 @@
+html {
+  font-family: 'League Gothic', sans-serif;
+  background-color: #FAF5F0;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  z-index: 1;
+  font-size: 2rem;
+  background-color: #E90;
+  color: #FAF5F0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FAF5F0;
+  transition-property: color;
+  transition-duration: 0.4s;
+}
+
+nav a:hover {
+  color:black;
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+  flex:1;
+}
+
+nav ul li:first-child {
+  padding: 4rem 0;
+}
+
+main {
+  margin-left: 10rem;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  margin: 1rem;
+}
+
+main div {
+  font-size: 1.3em;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+p {
+  font-family: 'Bellota', sans-serif;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  font-size: 0.8em;
+}
+
+.person {
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.portrait {
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  width:100%;
+  mix-blend-mode: multiply;
+}
+
+.identity {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+
+}
+
+.identity h2::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  background-color: white;
+  height: 0.5rem;
+  margin-top: 1rem;
+}
+
+.identity h2 {
+  margin-top: 2rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.identity h3 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.cyan-gradient  {
+  background: rgb(11,188,190);
+  background: linear-gradient(333deg, rgba(5,192,220,1) 0%, rgba(0,212,255,1) 100%);
+  color: black;
+}
+
+.green-gradient  {
+  background: rgba(84,238,2,1);
+  background: linear-gradient(333deg,   rgba(31,217,0,1) 0%, rgba(23,204,0,1) 100%);
+  color: black;
+}
+
+.violet-gradient  {
+  background: rgba(182,2,238,1) ;
+  background: linear-gradient(333deg, rgba(161,1,226,1) 0%, rgba(182,2,238,1) 100%);
+  color: black;
+}
+
+.orange-gradient  {
+  background: rgba(255,121,0,1);
+  background: linear-gradient(333deg, rgba(226,107,1,1) 0%, rgba(255,121,0,1) 100%);
+  color: black;
+}
+
+.rose-gradient  {
+  background: rgba(231,56,140,1);
+  background: linear-gradient(333deg, rgba(255,60,154,1) 0%, rgba(231,56,140,1) 100%);
+  color: black;
+}
+
+a.person:hover {
+  background: #FFF;
+}
